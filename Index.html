@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BZU Students | Department of Computer Science</title>
-    <link rel="stylesheet" href="/Style.css" />
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="searchStyle.css" />
+    <link
+      rel="icon"
+      href="/StudentPortal/images/favicon.ico"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -22,12 +27,48 @@
     <!-- main container -->
     <div class="container px-0">
       <!-- header start -->
-      <div class="col-md-6">
-        <img src="/images//logo1.png" alt="Your Image" class="img-fluid" />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="/StudentPortal/images/logo1.png"
+              alt="Your Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 my-auto">
+            <div class="input-group custom-input-group">
+              <form
+                action="https://www.google.com/search?q="
+                class="form-control d-flex"
+              >
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  placeholder="Search your query"
+                  aria-label="Search"
+                  id="q"
+                  name="q"
+                  aria-describedby="search-icon"
+                />
+                <div class="input-group-append">
+                  <button
+                    type="submit"
+                    class="btn btn-primary custom-btn"
+                    type="button"
+                  >
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+
       <nav class="navbar navbar-expand-lg bg-light sticky-top py-0">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">BZU Students</a>
+          <a class="navbar-brand" href="#"><h2>BZU Students</h2></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -43,7 +84,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-wrap fw-semibold"
+                  class="nav-link dropdown-toggle text-wrap"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -51,89 +92,45 @@
                 >
                   New Students
                 </a>
-                <!-- <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                <ul class="dropdown-menu pt-0">
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >BZU transition support</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Your University contract</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Before you arrive</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Your first few weeks</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Recognised students</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Visiting students</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
-                      >Mature students</a
-                    >
-                  </li>
-                  <hr class="dropdown-divider" />
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
-                      >International students</a
-                    >
-                  </li>
-                  <!-- <li></li> -->
-                <!-- </ul> -->
-                <ul class="dropdown-menu">
-                  <li class="m-0 mb-1">
-                    <a class="dropdown-item fs-6 fw-light" href="#"
-                      >BZU transition support</a
-                    >
-                  </li>
-                  <li class="m-0 mb-1">
-                    <a class="dropdown-item fs-6 fw-light" href="#"
-                      >Your University contract</a
-                    >
-                  </li>
-                  <li class="m-0 mb-1">
-                    <a class="dropdown-item fs-6 fw-light" href="#"
-                      >Before you arrive</a
-                    >
-                  </li>
-                  <li class="m-0 mb-1">
-                    <a class="dropdown-item fs-6 fw-light" href="#"
-                      >Your first few weeks</a
-                    >
-                  </li>
-                  <li class="m-0 mb-1">
-                    <a class="dropdown-item fs-6 fw-light" href="#"
-                      >Recognised students</a
-                    >
-                  </li>
-                  <li class="m-0 mb-1">
-                    <a class="dropdown-item fs-6 fw-light" href="#"
-                      >Visiting students</a
-                    >
-                  </li>
-                  <li class="m-0 mb-1">
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Mature students</a
                     >
                   </li>
 
                   <li class="m-0">
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >International students</a
                     >
                   </li>
@@ -141,7 +138,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-wrap fw-semibold"
+                  class="nav-link dropdown-toggle text-wrap"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -150,43 +147,43 @@
                   Academic Matters
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Study guidance</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Examinations and assessments</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Student conduct</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Complaints and academic appeals</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >University regulations</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Higher Doctorates</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Academic dress</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Exam Regulations</a
                     >
                   </li>
@@ -194,7 +191,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-wrap fw-semibold"
+                  class="nav-link dropdown-toggle text-wrap"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -203,38 +200,38 @@
                   Fees &amp; Funding
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Course fees</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >International opportunities</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Undergraduate funding</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Other graduate funding sources</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Living costs</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Financial assistance and support</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Prizes and awards</a
                     >
                   </li>
@@ -242,7 +239,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-wrap fw-semibold"
+                  class="nav-link dropdown-toggle text-wrap"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -251,48 +248,48 @@
                   BZU Life
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Clubs and societies</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Sport at BZU</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Skills and work experience</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Community and safety</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >IT and technology</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Your student record</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Business cards</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Student engagement</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Student surveys</a
                     >
                   </li>
@@ -300,7 +297,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-wrap fw-semibold"
+                  class="nav-link dropdown-toggle text-wrap"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -309,36 +306,36 @@
                   Wellfare &amp; Wellbeing
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Emergency</a
                     >
                   </li>
-                  <li>
+                  <li class="m-0">
                     <a class="dropdown-item fs-6 fw-light" href="#">Health</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Disability</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Counselling and mental health</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Further student support</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Harassment and conflict</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Sexual Harassment and Violence Support Service</a
                     >
                   </li>
@@ -346,7 +343,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-wrap fw-semibold"
+                  class="nav-link dropdown-toggle text-wrap"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -355,48 +352,48 @@
                   Graduation & Leaving BZU
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >BZU transition support</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Your University contract</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Before you arrive</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Preparing to leave</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Degree ceremonies</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Degree certificates and letters</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Academic transcripts</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Verifying qualifications</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item fs-6 fw-light" href="#"
+                  <li class="m-0">
+                    <a class="dropdown-item m-0 p-0 fs-6 fw-light" href="#"
                       >Continuing your studies</a
                     >
                   </li>
@@ -406,132 +403,8 @@
           </div>
         </div>
       </nav>
-      <!-- <header>
-        <nav>
-          
-          <ul>
-            <h2>
-              <a href="#" class="p-name">CS Students</a>
-              
-            </h2>
-            <li>
-              <a href="#" class="nav-list"
-                >New Students <i class="fas fa-arrow-right fa-rotate-90"></i
-              ></a>
-              <div class="submenu">
-                <ul>
-                  <li><a href="#">BZU transition support</a></li>
-                  <li><a href="#">Your University contract</a></li>
-                  <li><a href="#">Before you arrive</a></li>
-                  <li><a href="#">Your first few weeks</a></li>
-                  <li><a href="#">Recognised students</a></li>
-                  <li><a href="#">Visiting students</a></li>
-                  <li><a href="#">Mature students</a></li>
-                  <li><a href="#">International students</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="nav-list"
-                >Academic Matters <i class="fas fa-arrow-right fa-rotate-90"></i
-              ></a>
-              <div class="submenu">
-                <ul>
-                  <li><a href="#">Study guidance</a></li>
-                  <li><a href="#">Examinations and assessments</a></li>
-                  <li><a href="#">Student conduct</a></li>
-                  <li><a href="#">Complaints and academic appeals</a></li>
-                  <li><a href="#">University regulations</a></li>
-                  <li><a href="#">Higher Doctorates</a></li>
-                  <li><a href="#">Academic dress</a></li>
-                  <li><a href="#">Exam Regulations</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="nav-list"
-                >Fees &amp; Funding
-                <i class="fas fa-arrow-right fa-rotate-90"></i
-              ></a>
-              <div class="submenu">
-                <ul>
-                  <li><a href="#">Course fees</a></li>
-                  <li><a href="#">International opportunities</a></li>
-                  <li><a href="#">Undergraduate funding</a></li>
-                  <li><a href="#">Other graduate funding sources</a></li>
-                  <li><a href="#">Living costs</a></li>
-                  <li><a href="#">Financial assistance and support</a></li>
-                  <li><a href="#">Prizes and awards</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="nav-list"
-                >BZU Life <i class="fas fa-arrow-right fa-rotate-90"></i
-              ></a>
-              <div class="submenu">
-                <ul>
-                  <li><a href="#">Clubs and societies</a></li>
-                  <li><a href="#">Sport at BZU</a></li>
-                  <li><a href="#">Skills and work experience</a></li>
-                  <li><a href="#">Community and safety</a></li>
-                  <li><a href="#">IT and technology</a></li>
-                  <li><a href="#">Your student record</a></li>
-                  <li><a href="#">Business cards</a></li>
-                  <li><a href="#">Student engagement</a></li>
-                  <li><a href="#">Student surveys</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="nav-list"
-                >Wellfare and Wellbeing
-                <i class="fas fa-arrow-right fa-rotate-90"></i
-              ></a>
-              <div class="submenu">
-                <ul>
-                  <li><a href="#">Emergency</a></li>
-                  <li><a href="#">Health</a></li>
-                  <li><a href="#">Disability</a></li>
-                  <li><a href="#">Counselling and mental health</a></li>
-                  <li><a href="#">Further student support</a></li>
-                  <li><a href="#">Harassment and conflict</a></li>
-                  <li>
-                    <a href="#"
-                      >Sexual Harassment and Violence Support Service</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="nav-list"
-                >Graduation & Leaving BZU
-                <i class="fas fa-arrow-right fa-rotate-90"></i
-              ></a>
-              <div class="submenu">
-                <ul>
-                  <li><a href="#">Preparing to leave</a></li>
-                  <li><a href="#">Degree ceremonies</a></li>
-                  <li><a href="#">Degree certificates and letters</a></li>
-                  <li><a href="#">Academic transcripts</a></li>
-                  <li><a href="#">Verifying qualifications</a></li>
-                  <li><a href="#">Continuing your studies</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <li>
-              <input
-                type="text"
-                name="search"
-                id="search"
-                placeholder="Search"
-              />
-            </li>
-          </ul>
-        </nav>
-      </header> -->
+      <!-- <header> end -->
+ 
 
       <!-- main container -->
       <div class="wrapper">
@@ -566,11 +439,17 @@
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="/images/JinnahHall.jpeg"
+                src="/StudentPortal/images/slider2.jpg"
                 class="d-block w-100"
                 height="500"
                 alt="..."
@@ -584,7 +463,21 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/images/mainGate.jpeg"
+                src="/StudentPortal/images/JinnahHall.jpeg"
+                class="d-block w-100"
+                height="500"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/StudentPortal/images/mainGate.jpeg"
                 class="d-block w-100"
                 height="500"
                 alt="..."
@@ -598,7 +491,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/images/download.jpeg"
+                src="/StudentPortal/images/download.jpeg"
                 height="500"
                 class="d-block w-100"
                 alt="..."
@@ -701,57 +594,164 @@
       </table>
 
       <!-- footer start -->
-      <footer class="c-foot mt-4 background-dark">
-        <div class="meet-us">
-          <h2>Connect with us</h2>
+    
+      <div id="footer" class="container-fluid">
+        <div class="row">
+          <!-- Find your way -->
+          <div class="col-md-3 col-sm-6 find_your_way">
+            <h5>Find your Way</h5>
+            <ul>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="https://www.bzu.edu.pk/" target="_blank">About BZU</a></li>
+              <li><a href="v2_departments.php">Departments</a></li>
+              <li>
+                <a href="https://www.bzu.edu.pk/v2_administration.php"
+                  >University Administration</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bzu.edu.pk/news.php"
+                  >Jobs &amp; Vacancies</a
+                >
+              </li>
+            </ul>
+          </div>
 
-          <ul class="social">
-            <li>
-              <a class="youtube" href="#">
-                <i class="fab fa-youtube"></i> YouTube
-              </a>
-            </li>
-            <li>
-              <a class="twitter" href="#">
-                <i class="fab fa-twitter"></i> Twitter
-              </a>
-            </li>
-            <li>
-              <a class="facebook" href="#">
-                <i class="fab fa-facebook"></i> Facebook
-              </a>
-            </li>
-            <li>
-              <a class="tiktok" href="#">
-                <i class="fab fa-tiktok"></i> TikTok
-              </a>
-            </li>
-            <li>
-              <a class="linkedin" href="#">
-                <i class="fab fa-linkedin"></i> LinkedIn
-              </a>
-            </li>
-          </ul>
+          <!-- Help and Support -->
+          <div class="col-md-3 col-sm-6 help_support">
+            <h5>Student Facilities</h5>
+            <ul>
+              <li><a href="v2_dsa.php">Directorate of Students Affairs</a></li>
+              <li>
+                <a href="https://www.bzu.edu.pk/v2_societies.php"
+                  >Student Societies</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bzu.edu.pk/v2_itcenter.php" target="_blank">IT Services</a>
+              </li>
+              <li>
+                <a href="v2_hecdigitallibrary.php">HEC Digital Library</a>
+              </li>
+              <li><a href="v2_accomodation.php">Accommodation</a></li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 col-sm-6 quick_links">
+            <h5>Research Activities</h5>
+            <ul>
+              <li><a href="PJSS">Journal of Social Sciences</a></li>
+              <li><a href="PJIR">Journal of Islamic Research</a></li>
+              <li><a href="jrscience/">Journal of Research (Science)</a></li>
+              <li>
+                <a href="jrlanguages/defalt.htm"
+                  >Journal of Research (Languages)</a
+                >
+              </li>
+              <li>
+                <a href="v2_researchprojects.php"
+                  >Research Projects &amp; Grants</a
+                >
+              </li>
+              <li class="m-0"><a href="#">Any questions?</a></li>
+              <li class="m-0"><a href="#">Jobs and vacancies</a></li>
+              <li class="m-0"><a href="/StudentPortal/images/planner.jpg" target="_blank">Term dates</a></li>
+              <li class="m-0"><a href="#">Map</a></li>
+              <li class="m-0"><a href="#">Nexus365 email</a></li>
+              <li>
+                <a href="http://pjpr.bzu.edu.pk/" target="_blank"
+                  >Pakistan Journal of Pharmaceutical Research</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Admission -->
+          <div class="col-md-3 col-sm-6 Addmission">
+            <h5>Admission &amp; Exams</h5>
+            <ul>
+              <li>
+                <a href="https://apply.bzu.edu.pk/meritlists/" target="_blank">Merit Lists</a>
+              </li>
+              <li>
+                <a href="https://registration.bzu.edu.pk/" target="_blank"
+                  >Online Registration System</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://registration.bzu.edu.pk/cardprint/"
+                  target="_blank"
+                  >Online Registration Cards</a
+                >
+              </li>
+              <li>
+                <a href="http://slip.bzu.edu.pk/" target="_blank"
+                  >Online Roll No. Slips</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <hr />
-        <div class="q-links">
-          <h3>Quick Links</h3>
-          <ul class="q-links">
-            <li><a href="#">Any questions?</a></li>
-            <li><a href="#">Jobs and vacancies</a></li>
-            <li><a href="#">Term dates</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Nexus365 email</a></li>
-          </ul>
+
+        <!-- Contact Us -->
+        <div class="row">
+          <div class="col-md-12 contact_us">
+            <h5>Contact Us</h5>
+            <ul>
+              <li class="telephone_no">+92 (61) 9210071</li>
+              <li class="mailing_address">
+                Bahauddin Zakariya University Bosan Road, Multan, Punjab
+                (PAKISTAN)
+              </li>
+              <li class="email_address">
+                <a href="#">registrar@bzu.edu.pk</a>
+              </li>
+              <li class="googlemaps">
+                <a href="contactus.php">Google Maps</a> - Sitemap
+              </li>
+            </ul>
+            <h5>Connect with us</h5>
+  
+            <ul class="social">
+              <li class="m-0">
+                <a class="youtube" href="#">
+                  <i class="fab fa-youtube"></i> YouTube
+                </a>
+              </li>
+              <li class="m-0">
+                <a class="twitter" href="#">
+                  <i class="fab fa-twitter"></i> Twitter
+                </a>
+              </li>
+              <li class="m-0">
+                <a class="facebook" href="#">
+                  <i class="fab fa-facebook"></i> Facebook
+                </a>
+              </li>
+              <li class="m-0">
+                <a class="tiktok" href="#">
+                  <i class="fab fa-tiktok"></i> TikTok
+                </a>
+              </li>
+              <li class="m-0">
+                <a class="linkedin" href="#">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <hr />
-        <div class="copyright">
-          <p>
-            © Bahauddin Zakariya University 2023 | All rights reserved.
-            (Developed by Muhammad Arshad BSCS-20-02)
-          </p>
-        </div>
-      </footer>
+       
+      </div>
+      <!-- <hr /> -->
+      <div class="copyright">
+        <p>
+          © Bahauddin Zakariya University 2023 | All rights reserved. (Developed
+          by Muhammad Arshad BSCS-20-02)
+        </p>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

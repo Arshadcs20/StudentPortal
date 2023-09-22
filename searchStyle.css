@@ -1,0 +1,20 @@
+.custom-input-group {
+    border: none; /* Remove border from the input group */
+}
+
+.custom-input {
+    border: none; /* Remove border from the input */
+    border-radius: 0; /* Optional: Remove border radius if needed */
+    padding-right: 0; /* Optional: Remove right padding if needed */
+}
+
+.custom-input:focus {
+    
+    box-shadow: none; /* Remove outline on input focus */
+}
+
+.custom-btn {
+    border: none; /* Remove border from the button */
+    border-radius: 0; /* Optional: Remove border radius if needed */
+}
+

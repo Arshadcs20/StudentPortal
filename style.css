@@ -10,26 +10,12 @@
 
 #myBody {
   background-color: #353c47;
+  scroll-behavior: smooth;
 }
 
 .container {
   background-color: #fff;
 }
-
-/* .header-img {
-  position: relative;
-} */
-/* header {
-  background-color: #002147;
-  color: white;
-  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 10%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  overflow: hidden;
-} */
 
 .p-name {
   font-size: x-large;
@@ -44,16 +30,24 @@ nav .container-fluid .navbar-brand,
 nav .container-fluid .collapse .navbar-nav .nav-item .nav-link,
 nav .container-fluid .navbar-toggler .navbar-toggler-icon {
   color: #fff;
+  text-transform: uppercase;
 }
-.nav-link:hover {
-  background-color: #2f72a8;
+
+/* Change background color of parent nav-link when dropdown menu is active */
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+  background-color: #fff;
+  /* color: red; */
+}
+
+.navbar-nav .nav-item.dropdown:hover a.nav-link {
+  color: #002147;
 }
 
 nav ul,
 a {
   list-style: none;
   text-decoration: none;
-  color: #fff;
+  /* color: #fff; */
   display: flex;
   align-items: center;
 }
@@ -61,47 +55,46 @@ a {
 nav li {
   margin: 12px;
   padding: 10px;
-
+  color: #2f72a8;
   position: relative;
 }
-/* .nav-list {
-  color: #fff;
-  margin: 10px;
-  padding: 5px;
-  text-align: left;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border-right: 1px solid lightseagreen;
-} */
 
-.submenu {
-  padding: 8px;
-}
-.submenu ul {
-  font-size: small;
-  background-color: #fff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-.submenu ul li {
-  padding: 10px;
-  border-bottom: 1px solid greenyellow;
-}
-.submenu ul li:last-child {
-  border: none;
-}
-
-.submenu ul li:hover {
-  background-color: #2f72a8;
-  opacity: 0.5;
-}
-
-.submenu ul li a {
+a.dropdown-item {
   color: #2f72a8;
 }
-.submenu ul li a:hover {
+
+/* Style for the hover effect on <li> tags */
+ul.dropdown-menu li:hover {
+  background-color: #2f72a8;
   color: #fff;
+}
+
+ul.dropdown-menu li {
+  transition: background-color 0.3s, color 0.3s; /* Add the transition property */
+}
+/* Reset the background and text color for <a> tags inside <li> tags */
+ul.dropdown-menu li:hover a {
+  background-color: transparent; /* or any other background color you want for <a> tags */
+  color: inherit; /* Inherit text color from the parent */
+}
+
+/* Remove padding from top and bottom of <li> elements */
+ul.dropdown-menu {
+  border: none;
+  border-top-right-radius: 0%;
+  border-top-left-radius: 0%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.35);
+  padding-top: 0;
+  padding-bottom: 0;
+  outline: none;
+}
+
+/* Add a bottom border with light yellow color to <li> elements */
+ul.dropdown-menu li {
+  border-bottom: 1px solid #e0ded9;
+}
+ul.dropdown-menu li:last-child {
+  border-bottom: none;
 }
 
 nav li:hover ul {
@@ -223,3 +216,78 @@ nav ul ul {
   margin: 10px;
   font-size: x-large;
 } */
+
+#footer {
+  display: flex;
+  background-color: #002147;
+  margin-top: 20px;
+  font-size: small;
+  padding: 15px;
+  color: #fff;
+}
+
+.find_your_way ul,
+.Addmission ul,
+.quick_links ul,
+.contact_us ul,
+.meet_us ul,
+.help_support ul {
+  margin: 10px;
+  padding: 10px;
+  /* border-right: 1px solid greenyellow; */
+  list-style: circle;
+  color: #fff;
+}
+
+.find_your_way ul a,
+.Addmission ul a,
+.quick_links ul a,
+.contact_us ul a,
+.help_support ul a,
+.meet_us ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.find_your_way ul a:hover,
+.Addmission ul a:hover,
+.quick_links ul a:hover,
+.contact_us ul a:hover,
+.help_support ul a:hover {
+  text-decoration: underline;
+  color: lightseagreen;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #e967c3 0%, #5d82f6 100%);
+  color: #fff;
+  justify-content: center;
+}
+
+.copyright p {
+  text-align: center;
+  /* text-decoration: underline; */
+  /* font-size: x-small; */
+}
+
+.social li {
+  margin: 10px;
+  padding: 8px;
+}
+/* Connect with us styles */
+.social li:hover {
+  background-color: #2f72a8;
+  /* color: red; */
+}
+
+.social li a i {
+  margin-right: 8px;
+  color: #fff;
+}
+
+.social li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
