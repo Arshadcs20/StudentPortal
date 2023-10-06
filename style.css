@@ -130,7 +130,29 @@ nav ul ul {
   background-color: transparent; /* Hide the scrollbar thumb */
 }
 
+
+
+
 /* end of header styling */
+
+
+/* Styles for News Img */
+  /* Add CSS for the hover effect */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .image-container img {
+        transition: transform 0.4s, opacity 0.4s;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+
+
 
 /* dummy styles */
 
